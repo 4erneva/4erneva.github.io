@@ -2,7 +2,7 @@ body {
     color: #221811;
     font-family: Verdana, Arial, sans-serif;
     background-image: url(background.jpg);
-    background-repeat: repeat-y repeat-x
+    background-repeat: repeat-y repeat-x;
 }
 
 a {
@@ -20,7 +20,10 @@ a:hover {
 a:visited {
     color: #fdd2aa;
 }
-a:active {color:red;}
+
+a:active {
+    color: red;
+}
 
 header {
     background-color: #ffffff;
@@ -30,7 +33,7 @@ header {
 h1 {
     margin: 2em;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 h2 {
@@ -50,18 +53,30 @@ nav {
     font-weight: bold;
     font-size: 1.5em;
     padding-top: 10px;
+    position: fixed;
+    right: 100px;
+    top: 46px;
 }
 
 nav a {
     text-decoration: none;
     color: #ffffff;
+    display: block;
+    text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 1px;
 }
 
 main {
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 2em;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    margin-top: 2em;
     display: block;
+}
+
+main:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2)
 }
 
 p {
@@ -88,6 +103,7 @@ img {
 .timelineimage {
     padding-left: 250px;
     padding-top: 130px;
+    margin-left: 19%;
 }
 
 div {
@@ -96,10 +112,11 @@ div {
 
 #wrapper {
     min-width: 900px;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin-right: auto;
     margin-left: auto;
     overflow: visible;
+    scroll-behavior: smooth;
 }
 
 .contacts {
@@ -137,4 +154,7 @@ textarea {
 form {
     padding: 3em;
 }
-iframe {padding: 1em;}
+
+iframe {
+    padding: 1em;
+}
