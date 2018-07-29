@@ -61,7 +61,13 @@ particlesJS(
           sync: false
         }
       },
-
+      line_linked: {
+        enable: false,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
       move: {
         enable: true,
         speed: 1.6024100246771158,
@@ -132,7 +138,13 @@ particlesJS(
           sync: false
         }
       },
-
+      line_linked: {
+        enable: false,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
       move: {
         enable: true,
         speed: 1.6024100246771158,
@@ -204,7 +216,13 @@ particlesJS(
           sync: false
         }
       },
-
+      line_linked: {
+        enable: false,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      },
       move: {
         enable: true,
         speed: 1.6024100246771158,
