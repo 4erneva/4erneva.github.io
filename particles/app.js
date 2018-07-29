@@ -12,7 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS(
-  "particles-js",
+  "particles-js-stars",
 
   {
     particles: {
@@ -38,7 +38,7 @@ particlesJS(
         image: {
           src: "star.png",
           width: 100,
-          height: 76,
+          height: 76
         }
       },
       opacity: {
@@ -61,13 +61,7 @@ particlesJS(
           sync: false
         }
       },
-      line_linked: {
-        enable: false,
-        distance: 150,
-        color: "#ffffff",
-        opacity: 0.4,
-        width: 1
-      },
+
       move: {
         enable: true,
         speed: 1.6024100246771158,
@@ -83,45 +77,78 @@ particlesJS(
         }
       }
     },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
+
+    retina_detect: true
+  }
+);
+
+particlesJS(
+  "particles-js-circles",
+
+  {
+    particles: {
+      number: {
+        value: 8,
+        density: {
           enable: true,
-          mode: "repulse"
-        },
-        onclick: {
-          enable: true,
-          mode: "remove"
-        },
-        resize: true
+          value_area: 1521.1926150101674
+        }
       },
-      modes: {
-        grab: {
-          distance: 400,
-          line_linked: {
-            opacity: 1
-          }
+      color: {
+        value: "#aa5151"
+      },
+      shape: {
+        type: "circle",
+        stroke: {
+          width: 0,
+          color: "#482d2d"
         },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3
+        polygon: {
+          nb_sides: 2
         },
-        repulse: {
-          distance: 200,
-          duration: 0.4
-        },
-        push: {
-          particles_nb: 4
-        },
-        remove: {
-          particles_nb: 2
+        image: {
+          src: "star.png",
+          width: 100,
+          height: 76
+        }
+      },
+      opacity: {
+        value: 0.7931929622151722,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 16,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
+          sync: false
+        }
+      },
+
+      move: {
+        enable: true,
+        speed: 1.6024100246771158,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 2323.494535781818,
+          rotateY: 1200
         }
       }
     },
+
     retina_detect: true
   }
 );

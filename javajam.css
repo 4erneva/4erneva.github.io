@@ -4,7 +4,7 @@ body {
   background-image: url(backgroundflat.svg);
   background-repeat: repeat-y repeat-x;
 }
-#particles-js {
+.particles-js-layer {
   position: fixed;
   z-index: -1;
   top: 0;
