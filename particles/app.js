@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 34,
+        value: 8,
         density: {
           enable: true,
           value_area: 1521.1926150101674
@@ -33,12 +33,12 @@ particlesJS(
           color: "#482d2d"
         },
         polygon: {
-          nb_sides: 3
+          nb_sides: 2
         },
         image: {
           src: "star.png",
           width: 100,
-          height: 100
+          height: 76,
         }
       },
       opacity: {
@@ -52,7 +52,7 @@ particlesJS(
         }
       },
       size: {
-        value: 24.036150370156733,
+        value: 16,
         random: true,
         anim: {
           enable: false,
