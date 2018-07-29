@@ -1,7 +1,7 @@
 body {
   color: #221811;
   font-family: Verdana, Arial, sans-serif;
-  background-image: url(background.jpg);
+  background-image: url(backgroundflat.svg);
   background-repeat: repeat-y repeat-x;
 }
 #particles-js {
