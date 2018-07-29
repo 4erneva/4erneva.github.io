@@ -1,160 +1,186 @@
 body {
-    color: #221811;
-    font-family: Verdana, Arial, sans-serif;
-    background-image: url(background.jpg);
-    background-repeat: repeat-y repeat-x;
-}
-
-a {
-    color: #000000;
-    transition: 1s;
-    position: relative;
-    top: 0px;
-}
-
-a:hover {
-    color: #737079;
-    top: 5px;
-}
-
-a:visited {
-    color: #fdd2aa;
-}
-
-a:active {
-    color: red;
+  color: #221811;
+  font-family: Verdana, Arial, sans-serif;
+  background-image: url(background.jpg);
+  background-repeat: repeat-y repeat-x;
 }
 
 header {
-    background-color: #ffffff;
-    height: 150px;
+  background-color: #ffffff;
+  height: 150px;
 }
 
 h1 {
-    margin: 2em;
-    text-align: center;
-    color: #ffffff;
+  margin: 2em;
+  text-align: center;
+  color: #ffffff;
 }
 
 h2 {
-    text-align: center;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    color: #ffffff;
+  text-align: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  color: #ffffff;
 }
 
 text {
-    text-align: center;
-    padding: 1px;
+  text-align: center;
+  padding: 1px;
 }
 
-nav {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    padding-top: 10px;
-    position: fixed;
-    right: 100px;
-    top: 46px;
+nav.floating-menu {
+  position: relative;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 10px;
+  position: fixed;
+  right: 100px;
+  top: 46px;
+  color: white;
+  font-size: 2rem;
+}
+nav.floating-menu .hamburger {
+  transition: 0.2s;
+  position: relative;
+  top: 0;
+}
+nav.floating-menu:hover .hamburger {
+  position: relative;
+  top: 2px;
+}
+nav.floating-menu .menu-items {
+  
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.2s;
+  overflow: hidden;
+  background: rgba(51, 49, 56, 0.7);
+  height: 0px;
 }
 
+nav.floating-menu:hover .menu-items {
+  height: 13.5em;
+  padding: 1em;
+}
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 1px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 1px;
 }
 
 main {
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-    padding-top: 2em;
-    margin-top: 2em;
-    display: block;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  margin-top: 2em;
+  display: block;
 }
 
 main:nth-child(even) {
-    background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.2);
 }
 
 p {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #ffffff;
-    font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #ffffff;
+  font-size: 1.2em;
 }
 
 text {
-    color: #ffffff
+  color: #ffffff;
 }
 
 details {
-    padding-right: 20%;
-    padding-left: 20%;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
 img {
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .timelineimage {
-    padding-left: 250px;
-    padding-top: 130px;
-    margin-left: 19%;
+  padding-left: 250px;
+  padding-top: 130px;
+  margin-left: 19%;
 }
 
 div {
-    text-align: center;
+  text-align: center;
 }
 
 #wrapper {
-    min-width: 900px;
-    /* max-width: 1280px; */
-    margin-right: auto;
-    margin-left: auto;
-    overflow: visible;
-    scroll-behavior: smooth;
+  min-width: 900px;
+  /* max-width: 1280px; */
+  margin-right: auto;
+  margin-left: auto;
+  overflow: visible;
+  scroll-behavior: smooth;
 }
 
 .contacts {
-    font-size: 0.5em;
+  font-size: 0.5em;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 10px;
-    margin: 10px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 10px;
 }
 
 label {
-    float: left;
-    display: block;
-    text-align: right;
-    font-weight: bold;
-    width: 10em;
-    padding-right: 1em;
-    margin-left: 20em;
+  float: left;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  width: 10em;
+  padding-right: 1em;
+  margin-left: 20em;
 }
 
 input,
 textarea {
-    display: block;
-    margin-bottom: 2em;
-    margin-left: 45em;
+  display: block;
+  margin-bottom: 2em;
+  margin-left: 45em;
 }
 
 form {
-    padding: 3em;
+  padding: 3em;
 }
 
 iframe {
-    padding: 1em;
+  padding: 1em;
+}
+
+a {
+  color: #000000;
+  transition: 0.1s;
+  position: relative;
+  top: 0px;
+}
+
+a:visited {
+  color: #fdd2aa;
+}
+
+a:hover {
+  color: burlywood;
+  top: -2px;
+}
+
+a:active {
+  color: #737079;
+  top: 2px;
 }
