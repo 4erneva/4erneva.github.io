@@ -41,16 +41,21 @@ nav.floating-menu {
   font-size: 2rem;
 }
 nav.floating-menu .hamburger {
-  transition: 0.2s;
+  transition: 1s;
   position: relative;
-  top: 0;
+  transform: rotate(0deg);
+
 }
 nav.floating-menu:hover .hamburger {
-  position: relative;
-  top: 2px;
+  transform: rotate(180deg);
+
+}
+body.start-invitation-animation .hamburger {
+  width: 32px;
+  height: 32px;
+  transform: rotate(360deg);
 }
 nav.floating-menu .menu-items {
-  
   font-size: 1rem;
   text-align: center;
   transition: 0.2s;
@@ -58,6 +63,8 @@ nav.floating-menu .menu-items {
   background: rgba(51, 49, 56, 0.7);
   height: 0px;
 }
+
+
 
 nav.floating-menu:hover .menu-items {
   height: 13.5em;
@@ -184,3 +191,5 @@ a:active {
   color: #737079;
   top: 2px;
 }
+
+
