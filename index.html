@@ -11,7 +11,9 @@
 </head>
 
 <body>
+  <div id="particles-js"></div>
   <div id="wrapper">
+
 
 
     <main id="home">
@@ -144,14 +146,8 @@
     };
     document.addEventListener("DOMContentLoaded", onload);
   </script>
-  <div id="particles-js"></div>
-
-  <script src="http://www.jsdelivr.com/#!particles.js"></script>
-  <script>
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'particlesjs-config.json', function () {
-      console.log('callback - particles.js config loaded');
-    });</script>
+  <script src="libs/particles.min.js"></script>
+  <script src="particles/app.js"></script>
 </body>
 
 </html>
