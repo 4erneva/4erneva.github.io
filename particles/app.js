@@ -89,7 +89,7 @@ particlesJS(
 );
 
 particlesJS(
-  "particles-js-circles",
+  "particles-js-arrows",
 
   {
     particles: {
@@ -104,7 +104,7 @@ particlesJS(
         value: "#aa5151"
       },
       shape: {
-        type: "circle",
+        type: "image",
         stroke: {
           width: 0,
           color: "#482d2d"
@@ -113,7 +113,7 @@ particlesJS(
           nb_sides: 2
         },
         image: {
-          src: "star.png",
+          src: "particles/arrow.png",
           width: 100,
           height: 76
         }
@@ -182,7 +182,7 @@ particlesJS(
         value: "#aaaa51"
       },
       shape: {
-        type: "triangle",
+        type: "image",
         stroke: {
           width: 0,
           color: "#482d2d"
@@ -191,7 +191,7 @@ particlesJS(
           nb_sides: 2
         },
         image: {
-          src: "star.png",
+          src: "particles/square.png",
           width: 100,
           height: 76
         }
