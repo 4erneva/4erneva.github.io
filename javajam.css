@@ -196,7 +196,8 @@ a:active {
     top: 2px;
 }
 .socialmedia {
-    margin-top: 12em;
+    margin-top: 10em;
+    margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 1024px) {
